@@ -1,0 +1,137 @@
+:root {
+    --color-primary: #fff; 
+    --color-secondary: #293462;
+    --color-accent: #F7D716;
+    --color-headings: #fff;
+    --color-body: #000;
+}
+
+
+
+/* Typography */
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+
+
+.HU {
+    color: var(--color-accent);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: var(--color-secondary);
+    font-family: 'Poppins', sans-serif;
+    border-bottom: solid 1px #fff;
+}
+
+.logo {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo {
+        letter-spacing: 0px;
+    }
+}
+
+/* Blocks */
+.block {
+    padding: 2px;
+  }
+  
+  .block__header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .block__heading {
+    margin-top: 0;
+  }
+  
+  .block--dark {
+    background: var(--color-secondary);
+    color: #7b858b;
+  }
+  
+  .block--dark h1,
+  .block--dark h2,
+  .block--dark h3 {
+    color: #fff;
+  }
+  
+  .block--skewed-right {
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
+  }
+  
+  .block--skewed-left {
+    padding-bottom: calc(var(--padding-vertical) + 4rem);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
+  }
+  
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+/* CSS */
+.button-32 {
+  background-color: #fff000;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-32:not(:disabled):hover,
+.button-32:not(:disabled):focus {
+  outline: 0;
+  background: #f4e603;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.button-32:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
