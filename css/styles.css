@@ -1,9 +1,10 @@
 :root {
-    --color-primary: #fff; 
-    --color-secondary: #293462;
-    --color-accent: #fff000;
+    --color-primary: #293462; 
+    --color-secondary: #fff000;
+    --color-accent: #ebebf2;
     --color-headings: #fff;
-    --color-body: #000;
+    --color-body: #293462;
+    --color-bold: #F24C4C;
 }
 
 
@@ -11,28 +12,37 @@
 /* Typography */
 h1 {
   font-size: 48px;
+  color: var(--color-headings);
+  margin: 10px 0;
 }
 
 h2 {
   font-size: 46px;
+  color: var(--color-headings);
+  margin: 0;
 }
 
 p {
   font-size: 20px;
-  color: #ebebf2;
+  color: var(--color-accent);
+}
+
+.question {
+  color: var(--color-bold)
 }
 
 b {
-  color: #fff;
+  color: var(--color-headings);
   font-size: 20px; 
 }
 
 .HU {
-    color: var(--color-accent);
+    color: var(--color-secondary);
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: var(--color-body);
     
 }
 
@@ -41,13 +51,13 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     font-family: 'Poppins', sans-serif;
     border-bottom: solid 1px #fff;
 }
 
 .logo {
-    color: #fff;
+    color: var(--color-headings);
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 22px;
@@ -83,6 +93,15 @@ nav {
   }
   .container {
     padding: 0 20px;
+  }
+  .button-32 {
+    width: 100% !important;
+  }
+  .nav-links .button-32 {
+    display: none;
+  }
+  .logo {
+    margin: auto;
   }
 }
 
@@ -121,40 +140,27 @@ nav {
 
 /* Blocks */
 .block {
-    padding: 20px 0;
-  }
+  padding: 20px 0;
+}
   
-  .block__header {
-    text-align: center;
-  }
+.block__header {
+  text-align: center;
+}
   
-  
-  .block--dark {
-    background: var(--color-secondary);
-    color: #fff;
-  }
-  
-  .block--dark h1,
-  .block--dark h2,
-  .block--dark h3 {
-    color: #fff;
-  }
-  
-
-  
-  .container {
-    max-width: 768px;
-    margin: 0 auto;
-  }
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+}
 
 /* CSS */
 .button-32 {
-  background-color: #fff000;
+  background-color: var(--color-secondary);
   color: #000;
   cursor: pointer;
   font-weight: bold;
   padding: 10px 15px;
   margin: 20px 0;
+  width: 100%!important; 
   text-align: center;
   transition: 200ms;
   box-sizing: border-box;
@@ -168,7 +174,7 @@ nav {
 .button-32:not(:disabled):hover,
 .button-32:not(:disabled):focus {
   outline: 0;
-  background: #f4e603;
+  background: var(--color-secondary);
   box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
 }
 
