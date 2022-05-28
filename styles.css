@@ -1,11 +1,14 @@
 :root {
-    --color-primary: #293462; 
-    --color-secondary: #fff000;
+    --color-primary: #112B3C; 
+    --color-secondary: #F66B0E;
     --color-accent: #ebebf2;
     --color-headings: #fff;
-    --color-body: #293462;
-    --color-bold: #F24C4C;
+    --color-body: #112B3C;
+    --color-bold: #F66B0E;
 }
+
+/* purple #293462
+   yellow #fff000 */
 
 
 
